@@ -1,0 +1,28 @@
+jeff@macharyas:~$ ls
+dbexport.pgsql  Downloads  pgadmin.log  smartgit   Videos          week7
+Desktop         Music      Pictures     Templates  VirtualBox VMs
+Documents       openscg    Public       testdb     week5
+jeff@macharyas:~$ cd openscg
+jeff@macharyas:~/openscg$ ls
+test_postgres_macharyas4
+jeff@macharyas:~/openscg$ pg_restore -l test_postgres_macharyas4
+;
+; Archive created at Tue Oct 20 20:15:03 2015
+;     dbname: jeff-db
+;     TOC Entries: 6
+;     Compression: -1
+;     Dump Version: 1.12-0
+;     Format: CUSTOM
+;     Integer: 4 bytes
+;     Offset: 8 bytes
+;     Dumped from database version: 9.5beta1
+;     Dumped by pg_dump version: 9.5beta1
+;
+;
+; Selected TOC Entries:
+;
+7; 2615 16417 SCHEMA - equipment postgres
+181; 1259 16418 TABLE equipment equipment-list postgres
+2133; 0 16418 TABLE DATA equipment equipment-list postgres
+2018; 2606 16434 CONSTRAINT equipment pk postgres
+jeff@macharyas:~/openscg$ 
